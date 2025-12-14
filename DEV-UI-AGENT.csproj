@@ -11,6 +11,9 @@
     <Content Include="Prompts\GeneralAgenteChat.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Prompts\GeneralCopilotAgent.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

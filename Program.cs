@@ -32,6 +32,9 @@ DEV_UI_AGENT.Agents.MCP.FileEditorAgent.Register(builder);
 // Registrar agente de llamadas a funciones simples
 DEV_UI_AGENT.Agents.CallFunction.SimpleFunctionsAgent.Register(builder);
 
+// Registrar agente Copilot que usa los agentes anteriores
+DEV_UI_AGENT.Agents.Copilot.CopilotAgent.Register(builder);
+
 // Registrar servicios requeridos por Dev UI
 builder.Services.AddOpenAIResponses();
 builder.Services.AddOpenAIConversations();
