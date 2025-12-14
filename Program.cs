@@ -18,12 +18,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddEnvironmentVariables();
 
 // Configurar Azure OpenAI Client
-AzureOpenAIConfig.Register(builder);
+ AzureOpenAIConfig.Register(builder);
+
+// Configurar Ollama Client
+//OllamaConfig.Register(builder);
 
 // Registrar agentes general del chat
 DEV_UI_AGENT.Agents.General.ChatAgent.Register(builder);
 
-// Registrar agente editor de archivos MCP
+// Registrar agente editor de archivos locales, es necesario configurar la carpeta "EditableFiles" con archivos de texto para editar
 DEV_UI_AGENT.Agents.MCP.FileEditorAgent.Register(builder);
 
 // Registrar agente de llamadas a funciones simples
