@@ -1,5 +1,7 @@
 # DEV-UI-AGENT — PoC: Dev UI + Agent Framework (ASP.NET Core)
 
+![Dev UI](img/lista_archivo.png "Pantalla principal de Dev UI")
+
 Este repositorio es una **prueba de concepto (PoC)** en **ASP.NET Core** cuyo objetivo es mostrar, de forma práctica, cómo funciona **Dev UI** del **Microsoft Agents / Agent Framework**.
 
 La intención es que puedas:
@@ -13,6 +15,7 @@ La intención es que puedas:
 > Estado: **en desarrollo**. Este proyecto prioriza la experimentación y la exploración del framework por encima de “producto final”.
 
 ---
+![Dev UI](img/tools.png "Al usar Tools se puede ver de forma facil en el menú lateral derecho, aqui vemos listar archivo")
 
 ## Demo (2 minutos): levantar Dev UI y probar agentes
 
