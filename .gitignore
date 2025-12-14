@@ -7,3 +7,4 @@ bin
 *.tlog
 *.cache
 appsettings.json
+appsettings.Development.json
