@@ -9,6 +9,7 @@ using Microsoft.Agents.AI.DevUI;
 using Microsoft.Agents.AI.Hosting;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.DependencyInjection;
+using OpenTelemetry.Trace;
 using System.ClientModel;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,9 @@ AzureOpenAIConfig.Register(builder);
 
 // Registrar agentes general del chat
 DEV_UI_AGENT.Agents.General.ChatAgent.Register(builder);
+
+// Registrar agente editor de archivos MCP
+DEV_UI_AGENT.Agents.MCP.FileEditorAgent.Register(builder);
 
 // Registrar agente de llamadas a funciones simples
 DEV_UI_AGENT.Agents.CallFunction.SimpleFunctionsAgent.Register(builder);
