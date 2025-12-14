@@ -19,7 +19,11 @@ builder.Configuration.AddEnvironmentVariables();
 // Configurar Azure OpenAI Client
 AzureOpenAIConfig.Register(builder);
 
+// Registrar agentes general del chat
 DEV_UI_AGENT.Agents.General.ChatAgent.Register(builder);
+
+// Registrar agente de llamadas a funciones simples
+DEV_UI_AGENT.Agents.CallFunction.SimpleFunctionsAgent.Register(builder);
 
 // Registrar servicios requeridos por Dev UI
 builder.Services.AddOpenAIResponses();
